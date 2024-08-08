@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const flowerContainer = document.getElementById('flowerContainer');
     const addFlowerButton = document.getElementById('addFlowerButton');
     const message = document.getElementById('message');
+    let flowerCount = 0;
 
     addFlowerButton.addEventListener('click', function () {
         // Crear una nueva flor
@@ -28,12 +29,17 @@ document.addEventListener('DOMContentLoaded', function () {
         // Agregar la flor al contenedor de flores
         flowerContainer.appendChild(flower);
 
+        // Incrementar el contador de flores
+        flowerCount++;
+
         // Mostrar el mensaje si hay al menos una flor
         if (flowerContainer.children.length > 0) {
             message.classList.remove('hidden');
         }
 
-        // Redirigir a un enlace después de agregar la flor
-        window.location.href = 'https://www.youtube.com/watch?v=07A2dxfzsIg'; // Cambia este enlace por el que desees
+        // Redirigir a un enlace después de generar 3 flores
+        if (flowerCount === 3) {
+            window.location.href = 'https://www.tu-enlace.com'; // Cambia este enlace por el que desees
+        }
     });
 });
