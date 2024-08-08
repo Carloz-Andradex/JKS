@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
             message.classList.remove('hidden');
         }
 
-        // Redirigir a un enlace después de generar 3 flores
+        // Redirigir a un enlace después de generar 7 flores
         if (flowerCount === 7) {
             window.location.href = 'https://www.youtube.com/watch?v=07A2dxfzsIg'; // Cambia este enlace por el que desees
         }
