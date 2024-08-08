@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Redirigir a un enlace después de generar 3 flores
-        if (flowerCount === 3) {
-            window.location.href = 'https://www.tu-enlace.com'; // Cambia este enlace por el que desees
+        if (flowerCount === 7) {
+            window.location.href = 'https://www.youtube.com/watch?v=07A2dxfzsIg'; // Cambia este enlace por el que desees
         }
     });
 });
