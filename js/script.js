@@ -32,5 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (flowerContainer.children.length > 0) {
             message.classList.remove('hidden');
         }
+
+        // Redirigir a un enlace después de agregar la flor
+        window.location.href = 'https://www.youtube.com/watch?v=07A2dxfzsIg'; // Cambia este enlace por el que desees
     });
 });
